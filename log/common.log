@@ -1,0 +1,215 @@
+[2019-11-19 11:21:14][DEBUG][ org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594)]: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12cdcf4  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\JdbcApp.class]  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\dao\impl\OrgDaoImpl.class]  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\utils\DaoUtils.class]  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)]: Loaded 10 bean definitions from class path resource [bean-cp.xml]  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'  
+[2019-11-19 11:21:15][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'ds'  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'jdbcApp'  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'orgDaoImpl'  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'daoUtils'  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:21:16][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.createSeedDate(DaoUtils.java:58)]: Created 2 orgs  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation CREATE successful  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:21:18][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:21:18][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=3, name=TEST3, year=2003, code=CCCCC]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking getOrg ******
+OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [UPDATE org SET code = ? WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation UPDATE successful  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking UPDATE ******
+OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [DELETE FROM org WHERE id = ? ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation DELETE successful  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after DELETE operation ******
+  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:21:22][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:399)]: Executing SQL statement [TRUNCATE TABLE org ]  
+[2019-11-19 11:21:22][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:23][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:21:23][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:21:23][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:21:23][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrgCount(DaoUtils.java:62)]: 
+****** currently we have 0 orgs after TRUNCATE operation ******  
+[2019-11-19 11:21:23][DEBUG][ org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)]: Closing org.springframework.context.support.ClassPathXmlApplicationContext@12cdcf4, started on Tue Nov 19 11:21:14 CST 2019  
+[2019-11-19 11:26:57][DEBUG][ org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:594)]: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7a30d1e6  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\JdbcApp.class]  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\dao\impl\OrgDaoImpl.class]  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:437)]: Identified candidate component class: file [D:\eclipse-workspace\heimlich\spring-logging\target\classes\idv\heimlich\spring\utils\DaoUtils.class]  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)]: Loaded 10 bean definitions from class path resource [bean-cp.xml]  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.driverClassName' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115)]: Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'ds'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'jdbcApp'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'orgDaoImpl'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)]: Creating shared instance of singleton bean 'daoUtils'  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:26:58][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.createSeedDate(DaoUtils.java:58)]: Created 2 orgs  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [INSERT INTO org (id, name, year, code)  VALUES (nvl((select max(id) from org), 0) + 1, ?, ?, ?) ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation CREATE successful  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=3, name=TEST3, year=2003, code=CCCCC]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking getOrg ******
+OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:00][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [UPDATE org SET code = ? WHERE id = ? ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation UPDATE successful  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking UPDATE ******
+OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT id, name, year, code FROM org WHERE id = ? ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:860)]: Executing prepared SQL update  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [DELETE FROM org WHERE id = ? ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation DELETE successful  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after DELETE operation ******
+  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:399)]: Executing SQL statement [TRUNCATE TABLE org ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667)]: Executing prepared SQL query  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609)]: Executing prepared SQL statement [SELECT * FROM org ]  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)]: Fetching JDBC Connection from DataSource  
+[2019-11-19 11:27:01][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrgCount(DaoUtils.java:62)]: 
+****** currently we have 0 orgs after TRUNCATE operation ******  
+[2019-11-19 11:27:01][DEBUG][ org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)]: Closing org.springframework.context.support.ClassPathXmlApplicationContext@7a30d1e6, started on Tue Nov 19 11:26:57 CST 2019  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.createSeedDate(DaoUtils.java:58)]: Created 2 orgs  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation CREATE successful  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after READ operation ******
+  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=BBBBB]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=3, name=TEST3, year=2003, code=CCCCC]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking getOrg ******
+OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation UPDATE successful  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:31)]: 
+****** printing orgs after invoking UPDATE ******
+OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printSuccessFailure(DaoUtils.java:36)]: 
+Operation DELETE successful  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:24)]: 
+****** printing orgs after DELETE operation ******
+  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=1, name=TEST1, year=2001, code=AAAAA]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrg(DaoUtils.java:26)]: OrgDo [id=2, name=TEST2, year=2002, code=ZZZZZ]  
+[2019-11-19 11:51:38][INFO][ idv.heimlich.spring.utils.DaoUtils.printOrgCount(DaoUtils.java:62)]: 
+****** currently we have 0 orgs after TRUNCATE operation ******  
